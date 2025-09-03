@@ -132,7 +132,7 @@ app.get(("/testlisting"),wrapAsync ( async (req,res)=>{
 // app.get("/",(req,res)=>{
 //     res.send("root page ");
 // })
-app.all("*", (req, res, next) => {
+app.all("/*", (req, res, next) => { //app.all
     next(new ExpressError(404, "This page is not found"));
 });
 
