@@ -12,7 +12,7 @@ const upload =multer({storage});
 
 
 
-const listingcontroller=require("../controller/listing.js");
+// const listingcontroller=require("../controller/listing.js"); //render last
 
 //validation for schema [middleware]
 //  const validateListing=(req,res,next)=>{  
