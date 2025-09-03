@@ -136,7 +136,7 @@ app.get(("/testlisting"),wrapAsync ( async (req,res)=>{
 //     next(new ExpressError(404, "This page is not found"));
 // });
 app.use((req, res) => {
-  res.status(404).render("error.ejs"); // or res.send("Page not found")
+  res.status(402).render("error.ejs"); // or res.send("Page not found")
 });
 
 // app.all("*",(req,res,next)=>{
